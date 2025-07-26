@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sachinthana Gunathilaka | Education CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      color: #fff;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      margin-bottom: 40px;
+    }
+    h2 {
+      border-bottom: 2px solid #fff;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    .certification, .education {
+      margin-bottom: 20px;
+    }
+    .certification a {
+      color: #4fc3f7;
+      text-decoration: none;
+    }
+    .more-certifications {
+      display: none;
+      margin-top: 10px;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skill {
+      background: #333;
+      padding: 10px 15px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      position: relative;
+    }
+    .skill:hover .tooltip {
+      display: block;
+    }
+    .tooltip {
+      display: none;
+      position: absolute;
+      top: 110%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #222;
+      padding: 10px;
+      border-radius: 10px;
+      color: #fff;
+      width: 200px;
+      font-size: 0.85rem;
+      text-align: center;
+      z-index: 1;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .more-btn {
+      background: #4fc3f7;
+      color: #000;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      .skill { font-size: 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sachinthana Gunathilaka</h1>
+    <p>Certified AI Developer | Cloud Engineer | Network Specialist</p>
+  </header>
+
+  <section>
+    <h2>Personal Details</h2>
+    <p><strong>Date of Birth:</strong> 24 February 2008</p>
+    <p><strong>Email:</strong> <a href="mailto:k.p.u.e.sachinthanagunathilaka2008@gmail.com">k.p.u.e.sachinthanagunathilaka2008@gmail.com</a></p>
+    <p><strong>Portfolio:</strong> <a href="https://www.credly.com/users/sachinthana-gunathilaka" target="_blank">credly.com/sachinthana-gunathilaka</a></p>
+    <p><strong>Website:</strong> <a href="https://devsachi.unaux.com" target="_blank">devsachi.unaux.com</a></p>
+  </section>
+
+  <section>
+    <h2>Educational Background</h2>
+    <div class="education">
+      <p><strong>Master of Computer Applications (MCA)</strong> – University of Moratuwa (May 2023 – Jul 2023)</p>
+      <p>Activities: Python for Beginners, Coding Projects</p>
+    </div>
+    <div class="education">
+      <p><strong>Diploma in Computer Networking</strong> – Alison (Issued May 2023)</p>
+      <p>Credential ID: 1480-31499671</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <div class="certification">
+      <p><strong>Neo4j Certified Professional</strong> – Jun 2025</p>
+      <p><strong>AWS for Games (AWS)</strong> – Aug 2024</p>
+      <p><strong>Networking Basics (Cisco)</strong> – Sep 2024</p>
+      <p><strong>Scientific Computing with Python (freeCodeCamp)</strong> – Apr 2024</p>
+      <p><strong>Digital Skills: Marketing (FutureLearn)</strong> – 2023</p>
+      <button class="more-btn" onclick="document.getElementById('moreCerts').style.display='block'; this.style.display='none';">Show All Certifications</button>
+      <div id="moreCerts" class="more-certifications">
+        <ul>
+          <li>Build Real World AI Applications with Gemini and Imagen</li>
+          <li>Manage Kubernetes in Google Cloud</li>
+          <li>Classify Images with TensorFlow</li>
+          <li>Get Started with Dataplex</li>
+          <li>Analyze Sentiment with Natural Language API</li>
+          <li>Cloud Architecture: Design, Implement, and Manage</li>
+          <li>Create ML Models with BigQuery ML</li>
+          <li>Networking Fundamentals on Google Cloud</li>
+          <li>Protect Sensitive Data with Data Loss Prevention</li>
+          <li>Get Started with Google Workspace Tools</li>
+          <li>Enhance Gemini Model Capabilities</li>
+          <li>Set Up an App Dev Environment on Google Cloud</li>
+          <li>Build a Data Warehouse with BigQuery</li>
+          <li>The Basics of Google Cloud Compute</li>
+          <li>Tag and Discover BigLake Data</li>
+          <li>Mitigate Threats with Security Command Center</li>
+          <li>Create and Manage Cloud Spanner Instances</li>
+          <li>Migrate MySQL Data to Cloud SQL</li>
+          <li>App Engine: 3 Ways</li>
+          <li>Build a Secure Google Cloud Network</li>
+          <li>Get Started with Eventarc</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <div class="skill">Python<div class="tooltip">Scientific computing, AI, backend development</div></div>
+      <div class="skill">C#<div class="tooltip">.NET development and Windows applications</div></div>
+      <div class="skill">JavaScript<div class="tooltip">Frontend interactivity and dynamic UI</div></div>
+      <div class="skill">HTML/CSS<div class="tooltip">Responsive design and layout</div></div>
+      <div class="skill">Google Cloud<div class="tooltip">25+ skill badges in AI, DevOps, and more</div></div>
+      <div class="skill">AWS<div class="tooltip">Cloud game dev, services & deployment</div></div>
+      <div class="skill">Neo4j<div class="tooltip">Graph data modeling and analytics</div></div>
+      <div class="skill">Networking<div class="tooltip">Cisco-certified IP, cabling, and setup</div></div>
+      <div class="skill">AI & ML<div class="tooltip">Model training, NLP, vision, LLMs</div></div>
+      <div class="skill">ChatGPT-5<div class="tooltip">Advanced AI integration & prompting</div></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sachinthana Gunathilaka. All rights reserved.</p>
+  </footer>
+</body>
+</html>
